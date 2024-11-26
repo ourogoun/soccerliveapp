@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    text-transform: uppercase;
+    padding: 20px;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-box {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 2em;
+}
+
+.title-box #goals {
+    font-size: 2em;
+}
+
+.team {
+    width: 100px;
+}
+
+.team img {
+    height: 54px;
+    width: 54px;
+}
+
+.matches-table {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.match-tile {
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.match-tile img {
+    width: 52px;
+    height: 52px;
+}
+
+.match-tile p {
+    font-size: 1.2rem;
+}
+
+.match-tile #goals {
+    font-size: 1.1rem;
+}
+
+.match-tile .team {
+    width: 100px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .title-box {
+        flex-direction: column;
+        font-size: 1.5em;
+    }
+
+    .title-box #goals {
+        font-size: 1.5em;
+    }
+
+    .match-tile {
+        flex-direction: column;
+    }
+
+    .match-tile img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .match-tile p, .match-tile #goals {
+        font-size: 1rem;
+    }
+}
