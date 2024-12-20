@@ -1,71 +1,36 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" type="text/webback" href="webback.py">
-    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Soccer Live Score</title>
+    <style>
+        .team-logo {
+            cursor: pointer;
+            width: 100px;
+            height: 100px;
+        }
+        .team-info {
+            display: none;
+            border: 1px solid #333;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to OG Website</h1>
-    <a href="https://arafatourogouni.wixsite.com/wixog">checkout Here</a>
-    <p>This is OG's Bio</p>
-    <p>Since 2 years, OG has been an incredible student at DeVry University, which led him to be among the best in the IT Networking field, resolving either technical or administrative issues and being a Software Developer.</p>
-    <p>OG's goal is to: <q>Build a future where people live in harmony with nature and connect to each other to provide the best quality of IT.</q></p>
-    <p>Mr. <abbr title="OURO GOUNI">OG</abbr> was born in 2000</p>
-    <p>Moved to the USA to accomplish his IT field dream</p>
-    <h2>This is the Address Info</h2>
-    <address>
-        <p>Created by OG.<br>Visit me at:<br><a href="D:\index.html">Click here</a></p>
-        <p>1308 CM PL NW, Altoona, IOWA<br>USA<br>Email me at:<a href="mailto:yoropolite@gmail.com">Here<br>Github info: <a href="https://github.com/dashboard">join me here</a></p>
-    </address>
-    <div>
-        <h3>Personal Info</h3>
-        <table>
-          <tr>
-            <th>Name</th>
-            <th>job</th>
-            <th>Contact</th>
-            <th>Country</th>
-            <th>Age</th>
-          </tr>
-          <tr>
-            <td>OG</td>
-            <td>USAAF</td>
-            <td>319-536-5513</td>
-            <td>USA</td>
-            <td>32</td>
-          </tr>
-        </table>
-            <h4>Register</h4>
-    <form method="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit">Register</button>
-    </form>
-            <h5>Login</h5>
-    <form method="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button type="submit">Login</button>
-    </form>
-
-          
-          
-        
-          
-
-
-    </div>
+    <header>
+        <h1>Soccer Live Score</h1>
+    </header>
+    <main>
+        <div id="matchTable" class="matches-table"></div>
+        <div id="teamInfo" class="team-info">
+            <h2 id="teamName"></h2>
+            <p id="teamDetails"></p>
+        </div>
+    </main>
+    <script src="main.js"></script>
 </body>
 </html>
-
-
